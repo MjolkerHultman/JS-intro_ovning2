@@ -15,7 +15,8 @@
     <h2 id="huvudrubrik">Välkommen till min sida</h2>
     <p id="brodtext">Detta är ett stycke text.</p>
 
-    <button onclick="document.getElementById('huvudrubrik').textContent='Rubriken är ändrad!'; document.getElementById('brodtext').textContent='Brödtexten har uppdaterats!';">Ändra innehåll</button>
+    <button onclick="document.getElementById('huvudrubrik').textContent='Melker Lindmark Hultman'; document.getElementById('brodtext').textContent='INSERT FAVOURITE FOOD HERE';">Ändra innehåll</button>
+    <button onclick="document.getElementById('huvudrubrik').textContent='Välkommen till min sida'; document.getElementById('brodtext').textContent='Detta är ett stycke text.';">Ändra innehåll</button>
 
     <!-- 
     **************************************************************************
@@ -28,10 +29,13 @@
     <hr>
 
     <h3>Del 2: Använda innerHTML och HTML-taggar</h3>
-    <p>Här ska innehållet förändras med HTML-taggar.</p>
+    <p id="styling">Här ska innehållet förändras med HTML-taggar.</p>
 
-    <button onclick="document.getElementById('styling').textContent='<b>Detta är fetstilad text!</b>';">Gör fetstil</button>
-
+    <button onclick="document.getElementById('styling').innerHTML='<b>Detta är fetstilad text!</b>';">Gör fetstil</button>
+    <!--
+    <button onclick="document.getElementById('styling').innerHTML='<a href="https://www.fanfiction.net/s/13338339/1/Compass-of-thy-Soul">You know what you must do</a>';">Art thou prepared?</button>
+    -->
+    <button onclick="document.getElementById('styling').innerHTML='<i>Detta är kursiv text!</i>';">Gör kursiv</button>
     <!-- 
     **************************************************************************
     UPPGIFT 2:
@@ -48,6 +52,8 @@
     <div id="box" style="border: 1px solid black; padding: 10px; margin-bottom: 10px;">
         <p id="boxText">Detta är en informationsruta.</p>
     </div>
+
+    <button onclick='document.getElementById("boxText").textContent = "Systemet är igång"'; onclick='document.getElementById("box").style.backgroundColor = "lightblue"';>Starta</button>
 
     <!-- 
     **************************************************************************
